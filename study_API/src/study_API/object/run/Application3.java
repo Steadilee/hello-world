@@ -24,7 +24,7 @@ public class Application3 {
 		
 		//	오버라이딩 이후 출력하면 동일한 hashCode값이 나온다.
 		
-		//	재정의한 equals 비교 결과가 true지만 hash 코드가 다른 경우 발생할 수 있는 문제..
+		//	재정의한 equals 비교 결과가 true지만 hashCode가  다른 경우 발생할 수 있는 문제..
 		Map<StudentVO, String> map = new HashMap<>();
 		map.put(new StudentVO(11, "서태웅", 187.5, "농구"), "북산에이스");
 		

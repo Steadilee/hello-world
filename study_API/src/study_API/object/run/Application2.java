@@ -18,7 +18,8 @@ public class Application2 {
 		
 		System.out.println("==연산 결과 : " + (student1 == student2));		// == 비교시 주소값을 비교하기 때문에 false가 나온다
 		
-		// equals()메소드 오버라이딩
+		// equals()메소드 오버라이딩 
+		// 순서 : 주소값 비교(비어있진 않은지) -> 다운캐스팅하여 필드별 비교
 		System.out.println("equals 비교 : " + student1.equals(student2));
 		
 		
