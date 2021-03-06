@@ -26,6 +26,8 @@ public class ArraylistComparator {
 			System.out.println(student);
 		}
 		
+		
+		//익명클래스
 		studentList.sort(new Comparator<StudentVO>() {
 
 			@Override
