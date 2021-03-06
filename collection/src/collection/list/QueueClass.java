@@ -6,7 +6,7 @@ import java.util.Queue;
 public class QueueClass {
 	public static void main(String[] args) {
 		
-		Queue<String> a = new LinkedList();
+		Queue<String> a = new LinkedList<>();
 		
 		a.offer("하나");
 		a.offer("둘");

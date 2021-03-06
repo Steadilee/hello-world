@@ -6,7 +6,7 @@ public class StackClass {
 	
 	public static void main(String[] args) {
 		
-		Stack<Integer> a = new Stack();
+		Stack<Integer> a = new Stack<>();
 		
 		a.push(1);
 		a.push(2);
