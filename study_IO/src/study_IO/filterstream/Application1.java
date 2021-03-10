@@ -49,11 +49,5 @@ public class Application1 {
 			
 			e.printStackTrace();
 		}
-		
-		
-		
-		
 	}
-	
-	
 }
