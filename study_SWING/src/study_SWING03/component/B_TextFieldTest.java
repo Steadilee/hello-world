@@ -48,7 +48,6 @@ public class B_TextFieldTest {
 			}
 		});
 		
-		
 		mf.add(panel);
 		
 		mf.setVisible(true);

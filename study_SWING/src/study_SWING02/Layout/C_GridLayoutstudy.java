@@ -1,31 +1,47 @@
 package study_SWING02.Layout;
 
 import java.awt.GridLayout;
+import java.util.LinkedHashSet;
+import java.util.Random;
+import java.util.Set;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class C_GridLayoutstudy extends JFrame {
-	
+public class C_GridLayoutstudy  {
 	
 	public C_GridLayoutstudy () {
 		
-		super("GridLayout");
+		JFrame mf = new JFrame();
 		
-		this.setBounds(300,200,800,500);
+		mf.setTitle("그리드 레이아웃");
 		
-		this.setLayout(new GridLayout(3,3));
+		mf.setBounds(300, 200, 800, 500);
+		mf.setLayout(new GridLayout(5,5));
 		
-		for(int i = 0; i < 9; i++) {
-			this.add(new JButton(i+""));
+		Set set = new LinkedHashSet();
+		
+		while(set.size() < 25) {
+			
+			set.add(new Random().nextInt(25) + 1);
 		}
 		
-		this.setVisible(true);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		System.out.println(set);
+		Object[] obj = set.toArray();
+		
+		for(int i = 0; i < obj.length; i++) {
+
+			String str = new Integer((int)obj[i]).toString();
+			mf.add(new JButton(str));
+			
+		}
+		
+		mf.setVisible(true);
+		mf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 	}
-	
-
-	
+	public static void main(String[] args) {
+		new C_GridLayoutstudy();
+	}
 
 }
